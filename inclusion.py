@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 from sklearn.preprocessing import LabelEncoder
-import joblib
+#import joblib
 
 # Charger le modèle
 #model_path = 'models/votre_modele.pkl'
