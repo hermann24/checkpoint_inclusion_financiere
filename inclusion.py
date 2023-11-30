@@ -1,17 +1,17 @@
 import streamlit as st
 import pandas as pd
-import pickle
-import sklearn
+#import pickle
+#import sklearn
 from sklearn.preprocessing import LabelEncoder
-#import joblib
+import joblib
 
 # Charger le modèle
 #model_path = 'models/votre_modele.pkl'
-#loaded_model = joblib.load(model_path)
+clf = joblib.load('modeleclf.joblib')
 
 # Charger le modèle préalablement entraîné
-with open("modeleclf.pkl", 'rb') as model_file:
-    clf = pickle.load(model_file)
+#with open("modeleclf.pkl", 'rb') as model_file:
+#    clf = pickle.load(model_file)
 
 # Charger vos données (vous pouvez adapter cela si vous souhaitez charger vos données depuis un fichier CSV)
 data = pd.read_csv('Financial_inclusion_dataset.csv')
